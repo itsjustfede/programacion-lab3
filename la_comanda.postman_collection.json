@@ -1,0 +1,978 @@
+{
+	"info": {
+		"_postman_id": "13192014-8297-440f-98eb-915a2ef2aa52",
+		"name": "la_comanda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "encuesta",
+			"item": [
+				{
+					"name": "/id_pedido",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "p_mesa",
+									"value": "MES01",
+									"type": "text"
+								},
+								{
+									"key": "p_restaurante",
+									"value": "La comanda",
+									"type": "text"
+								},
+								{
+									"key": "p_mozo",
+									"value": "mario",
+									"type": "text"
+								},
+								{
+									"key": "p_cocinero",
+									"value": "facundo",
+									"type": "text"
+								},
+								{
+									"key": "comentarios",
+									"value": "el servicio estuvo regular",
+									"type": "text"
+								},
+								{
+									"key": "id_pedido",
+									"value": "PD003",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://federicoarevalolacomanda.000webhostapp.com/index.php/encuesta/",
+							"protocol": "https",
+							"host": [
+								"federicoarevalolacomanda",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"encuesta",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "fede",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://federicoarevalolacomanda.000webhostapp.com/index.php/login/",
+							"protocol": "https",
+							"host": [
+								"federicoarevalolacomanda",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mesa",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQzOTc4MTMsImV4cCI6MTU0NDQwMTQxMywiYXVkIjoiYzk5ZmNiNzRiMjMyM2RiMjRhZDIwYjNkMTUzOGE0NzBjMzRiZTFkZSIsImRhdGEiOnsiaWQiOjIsIm5vbWJyZSI6Imp1YW4iLCJ0aXBvIjoic29jaW8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiIn0sImFwcCI6IkxhIGNvbWFuZGEgZmVkZXJpY28ifQ.2YsYWUE6IAxJaM2jOqCeDZpsTHaCmR1XzjggRNa2eVI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "mesa3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://federicoarevalolacomanda.000webhostapp.com/index.php/mesa/",
+							"protocol": "https",
+							"host": [
+								"federicoarevalolacomanda",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"mesa",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/baja/id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQzOTc4MTMsImV4cCI6MTU0NDQwMTQxMywiYXVkIjoiYzk5ZmNiNzRiMjMyM2RiMjRhZDIwYjNkMTUzOGE0NzBjMzRiZTFkZSIsImRhdGEiOnsiaWQiOjIsIm5vbWJyZSI6Imp1YW4iLCJ0aXBvIjoic29jaW8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiIn0sImFwcCI6IkxhIGNvbWFuZGEgZmVkZXJpY28ifQ.2YsYWUE6IAxJaM2jOqCeDZpsTHaCmR1XzjggRNa2eVI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "MES03",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://federicoarevalolacomanda.000webhostapp.com/index.php/mesa/baja/",
+							"protocol": "https",
+							"host": [
+								"federicoarevalolacomanda",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"mesa",
+								"baja",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/modificar/id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQzOTc4MTMsImV4cCI6MTU0NDQwMTQxMywiYXVkIjoiYzk5ZmNiNzRiMjMyM2RiMjRhZDIwYjNkMTUzOGE0NzBjMzRiZTFkZSIsImRhdGEiOnsiaWQiOjIsIm5vbWJyZSI6Imp1YW4iLCJ0aXBvIjoic29jaW8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiIn0sImFwcCI6IkxhIGNvbWFuZGEgZmVkZXJpY28ifQ.2YsYWUE6IAxJaM2jOqCeDZpsTHaCmR1XzjggRNa2eVI",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "MES03",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "mesa3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://federicoarevalolacomanda.000webhostapp.com/index.php/mesa/modificar/",
+							"protocol": "https",
+							"host": [
+								"federicoarevalolacomanda",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"mesa",
+								"modificar",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cerrar/id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQzOTc4MTMsImV4cCI6MTU0NDQwMTQxMywiYXVkIjoiYzk5ZmNiNzRiMjMyM2RiMjRhZDIwYjNkMTUzOGE0NzBjMzRiZTFkZSIsImRhdGEiOnsiaWQiOjIsIm5vbWJyZSI6Imp1YW4iLCJ0aXBvIjoic29jaW8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiIn0sImFwcCI6IkxhIGNvbWFuZGEgZmVkZXJpY28ifQ.2YsYWUE6IAxJaM2jOqCeDZpsTHaCmR1XzjggRNa2eVI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "MES03",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://federicoarevalolacomanda.000webhostapp.com/index.php/mesa/cerrar/",
+							"protocol": "https",
+							"host": [
+								"federicoarevalolacomanda",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"mesa",
+								"cerrar",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pedido",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQ1NjYxMTMsImV4cCI6MTU0NDU2OTcxMywiYXVkIjoiMjIzNTBjZWM0YTRhNDQzZTE4YWZlMDAxZmQwMzA4YTliMGY0MTM2NSIsImRhdGEiOnsiaWQiOjgsIm5vbWJyZSI6Im1hcmlvIiwidGlwbyI6Im1vem8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiMSJ9LCJhcHAiOiJMYSBjb21hbmRhIGZlZGVyaWNvIn0.xSbIEHYKIuiXTpYCNXmZhQT6wqyyjbN7EyRnoutgGY4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_mesa",
+									"value": "MES01",
+									"type": "text"
+								},
+								{
+									"key": "cliente",
+									"value": "fede",
+									"type": "text"
+								},
+								{
+									"key": "id_producto1",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "cantidad_producto1",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://federicoarevalolacomanda.000webhostapp.com/index.php/pedido/",
+							"protocol": "https",
+							"host": [
+								"federicoarevalolacomanda",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"pedido",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cancelar/id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://federicoarevalolacomanda.000webhostapp.com/index.php/pedido/cancelar/",
+							"protocol": "https",
+							"host": [
+								"federicoarevalolacomanda",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"pedido",
+								"cancelar",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ver[/]",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQ1NjQxMzcsImV4cCI6MTU0NDU2NzczNywiYXVkIjoiMjIzNTBjZWM0YTRhNDQzZTE4YWZlMDAxZmQwMzA4YTliMGY0MTM2NSIsImRhdGEiOnsiaWQiOjEsIm5vbWJyZSI6ImZlZGUiLCJ0aXBvIjoic29jaW8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiMSJ9LCJhcHAiOiJMYSBjb21hbmRhIGZlZGVyaWNvIn0.AhtyeOP7szAiNVseJz-g4fDp254JoomwrwsJ0rZQBu0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://federicoarevalolacomanda.000webhostapp.com/index.php/pedido/vertodos/",
+							"protocol": "https",
+							"host": [
+								"federicoarevalolacomanda",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"pedido",
+								"vertodos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/preparar[/]",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQ1NjYxMTMsImV4cCI6MTU0NDU2OTcxMywiYXVkIjoiMjIzNTBjZWM0YTRhNDQzZTE4YWZlMDAxZmQwMzA4YTliMGY0MTM2NSIsImRhdGEiOnsiaWQiOjgsIm5vbWJyZSI6Im1hcmlvIiwidGlwbyI6Im1vem8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiMSJ9LCJhcHAiOiJMYSBjb21hbmRhIGZlZGVyaWNvIn0.xSbIEHYKIuiXTpYCNXmZhQT6wqyyjbN7EyRnoutgGY4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_pedido",
+									"value": "PD004",
+									"type": "text"
+								},
+								{
+									"key": "id_producto",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "cantidad",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://federicoarevalolacomanda.000webhostapp.com/index.php/pedido/preparar/",
+							"protocol": "https",
+							"host": [
+								"federicoarevalolacomanda",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"pedido",
+								"preparar",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/fin[/]",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQ1NjM3ODMsImV4cCI6MTU0NDU2NzM4MywiYXVkIjoiMjIzNTBjZWM0YTRhNDQzZTE4YWZlMDAxZmQwMzA4YTliMGY0MTM2NSIsImRhdGEiOnsiaWQiOjcsIm5vbWJyZSI6ImZhY3VuZG8iLCJ0aXBvIjoibW96byIsImNsYXZlIjpudWxsLCJlc3RhZG8iOiIxIn0sImFwcCI6IkxhIGNvbWFuZGEgZmVkZXJpY28ifQ.DDWIoKyui_6m0lVthERIEb__TDQe9jPraf08QdSjzLs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_pedido",
+									"value": "PD004",
+									"type": "text"
+								},
+								{
+									"key": "id_producto",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://federicoarevalolacomanda.000webhostapp.com/index.php/pedido/fin/",
+							"protocol": "https",
+							"host": [
+								"federicoarevalolacomanda",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"pedido",
+								"fin",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ver/id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQ1NjU5MDYsImV4cCI6MTU0NDU2OTUwNiwiYXVkIjoiMjIzNTBjZWM0YTRhNDQzZTE4YWZlMDAxZmQwMzA4YTliMGY0MTM2NSIsImRhdGEiOnsiaWQiOjgsIm5vbWJyZSI6Im1hcmlvIiwidGlwbyI6Im1vem8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiMSJ9LCJhcHAiOiJMYSBjb21hbmRhIGZlZGVyaWNvIn0.1EGlHhGTDzfhdVb0URBtC46tRdd6zJ1dTUTQjR9uyRo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "PD002",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://federicoarevalolacomanda.000webhostapp.com/index.php/pedido/ver/",
+							"protocol": "https",
+							"host": [
+								"federicoarevalolacomanda",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"pedido",
+								"ver",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/despachar/id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQ1NjM3ODMsImV4cCI6MTU0NDU2NzM4MywiYXVkIjoiMjIzNTBjZWM0YTRhNDQzZTE4YWZlMDAxZmQwMzA4YTliMGY0MTM2NSIsImRhdGEiOnsiaWQiOjcsIm5vbWJyZSI6ImZhY3VuZG8iLCJ0aXBvIjoibW96byIsImNsYXZlIjpudWxsLCJlc3RhZG8iOiIxIn0sImFwcCI6IkxhIGNvbWFuZGEgZmVkZXJpY28ifQ.DDWIoKyui_6m0lVthERIEb__TDQe9jPraf08QdSjzLs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "PD004",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://federicoarevalolacomanda.000webhostapp.com/index.php/pedido/despachar/",
+							"protocol": "https",
+							"host": [
+								"federicoarevalolacomanda",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"pedido",
+								"despachar",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cobrar/id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQ1NjM3ODMsImV4cCI6MTU0NDU2NzM4MywiYXVkIjoiMjIzNTBjZWM0YTRhNDQzZTE4YWZlMDAxZmQwMzA4YTliMGY0MTM2NSIsImRhdGEiOnsiaWQiOjcsIm5vbWJyZSI6ImZhY3VuZG8iLCJ0aXBvIjoibW96byIsImNsYXZlIjpudWxsLCJlc3RhZG8iOiIxIn0sImFwcCI6IkxhIGNvbWFuZGEgZmVkZXJpY28ifQ.DDWIoKyui_6m0lVthERIEb__TDQe9jPraf08QdSjzLs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "PD004",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://federicoarevalolacomanda.000webhostapp.com/index.php/pedido/cobrar/",
+							"protocol": "https",
+							"host": [
+								"federicoarevalolacomanda",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"pedido",
+								"cobrar",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "producto",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQ1MzczODAsImV4cCI6MTU0NDU0MDk4MCwiYXVkIjoiYzk5ZmNiNzRiMjMyM2RiMjRhZDIwYjNkMTUzOGE0NzBjMzRiZTFkZSIsImRhdGEiOnsiaWQiOjIsIm5vbWJyZSI6Imp1YW4iLCJ0aXBvIjoic29jaW8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiIn0sImFwcCI6IkxhIGNvbWFuZGEgZmVkZXJpY28ifQ.b5b12ngyFTqOVHR2HKAQ3qVlZYCTeM1D5Uyktr80-NM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "Cerveza Premium",
+									"type": "text"
+								},
+								{
+									"key": "precio_venta",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "precio_compra",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "encargadop",
+									"value": "Bartender",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://lacomandafedericoarevalo.000webhostapp.com/index.php/producto/",
+							"protocol": "https",
+							"host": [
+								"lacomandafedericoarevalo",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"producto",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/baja/id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQ1MzczODAsImV4cCI6MTU0NDU0MDk4MCwiYXVkIjoiYzk5ZmNiNzRiMjMyM2RiMjRhZDIwYjNkMTUzOGE0NzBjMzRiZTFkZSIsImRhdGEiOnsiaWQiOjIsIm5vbWJyZSI6Imp1YW4iLCJ0aXBvIjoic29jaW8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiIn0sImFwcCI6IkxhIGNvbWFuZGEgZmVkZXJpY28ifQ.b5b12ngyFTqOVHR2HKAQ3qVlZYCTeM1D5Uyktr80-NM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://lacomandafedericoarevalo.000webhostapp.com/index.php/producto/baja/",
+							"protocol": "https",
+							"host": [
+								"lacomandafedericoarevalo",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"producto",
+								"baja",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar/id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQ1MzczODAsImV4cCI6MTU0NDU0MDk4MCwiYXVkIjoiYzk5ZmNiNzRiMjMyM2RiMjRhZDIwYjNkMTUzOGE0NzBjMzRiZTFkZSIsImRhdGEiOnsiaWQiOjIsIm5vbWJyZSI6Imp1YW4iLCJ0aXBvIjoic29jaW8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiIn0sImFwcCI6IkxhIGNvbWFuZGEgZmVkZXJpY28ifQ.b5b12ngyFTqOVHR2HKAQ3qVlZYCTeM1D5Uyktr80-NM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Coca Cola",
+									"type": "text"
+								},
+								{
+									"key": "precio_venta",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "precio_compra",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "encargado",
+									"value": "Bartender",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://lacomandafedericoarevalo.000webhostapp.com/index.php/producto/modificar/",
+							"protocol": "https",
+							"host": [
+								"lacomandafedericoarevalo",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"producto",
+								"modificar",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "usuario",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQ1NjU0MDMsImV4cCI6MTU0NDU2OTAwMywiYXVkIjoiMjIzNTBjZWM0YTRhNDQzZTE4YWZlMDAxZmQwMzA4YTliMGY0MTM2NSIsImRhdGEiOnsiaWQiOjEsIm5vbWJyZSI6ImZlZGUiLCJ0aXBvIjoic29jaW8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiMSJ9LCJhcHAiOiJMYSBjb21hbmRhIGZlZGVyaWNvIn0.15D2I-f3ssjIeApQVzvZ_E2apIKRfaikFvE6DPotBXU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "mario",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "mozo",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://lacomandafedericoarevalo.000webhostapp.com/index.php/usuario/",
+							"protocol": "https",
+							"host": [
+								"lacomandafedericoarevalo",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"usuario",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/suspender/id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQ1NDAwNzgsImV4cCI6MTU0NDU0MzY3OCwiYXVkIjoiYzk5ZmNiNzRiMjMyM2RiMjRhZDIwYjNkMTUzOGE0NzBjMzRiZTFkZSIsImRhdGEiOnsiaWQiOjIsIm5vbWJyZSI6Imp1YW4iLCJ0aXBvIjoic29jaW8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiIn0sImFwcCI6IkxhIGNvbWFuZGEgZmVkZXJpY28ifQ.391nowYzYKw6FesIvQvSV8WLmJ9MFcgq3-CyO2CDTg0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://lacomandafedericoarevalo.000webhostapp.com/index.php/usuario/suspender/",
+							"protocol": "https",
+							"host": [
+								"lacomandafedericoarevalo",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"usuario",
+								"suspender",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/baja/id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQ1NDAwNzgsImV4cCI6MTU0NDU0MzY3OCwiYXVkIjoiYzk5ZmNiNzRiMjMyM2RiMjRhZDIwYjNkMTUzOGE0NzBjMzRiZTFkZSIsImRhdGEiOnsiaWQiOjIsIm5vbWJyZSI6Imp1YW4iLCJ0aXBvIjoic29jaW8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiIn0sImFwcCI6IkxhIGNvbWFuZGEgZmVkZXJpY28ifQ.391nowYzYKw6FesIvQvSV8WLmJ9MFcgq3-CyO2CDTg0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://lacomandafedericoarevalo.000webhostapp.com/index.php/usuario/baja/",
+							"protocol": "https",
+							"host": [
+								"lacomandafedericoarevalo",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"usuario",
+								"baja",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/modificar/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDQ1NDAwNzgsImV4cCI6MTU0NDU0MzY3OCwiYXVkIjoiYzk5ZmNiNzRiMjMyM2RiMjRhZDIwYjNkMTUzOGE0NzBjMzRiZTFkZSIsImRhdGEiOnsiaWQiOjIsIm5vbWJyZSI6Imp1YW4iLCJ0aXBvIjoic29jaW8iLCJjbGF2ZSI6bnVsbCwiZXN0YWRvIjoiIn0sImFwcCI6IkxhIGNvbWFuZGEgZmVkZXJpY28ifQ.391nowYzYKw6FesIvQvSV8WLmJ9MFcgq3-CyO2CDTg0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "clave",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "tipo",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "estado",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://lacomandafedericoarevalo.000webhostapp.com/index.php/usuario/modificar/",
+							"protocol": "https",
+							"host": [
+								"lacomandafedericoarevalo",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"index.php",
+								"usuario",
+								"modificar",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
